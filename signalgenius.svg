@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -51.23 256.14 256.14" role="img" aria-label="Genius">
+  <defs>
+    <linearGradient id="sgL1" x1="38.42" y1="97.64" x2="38.42" y2="55.35" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f0f"/>
+      <stop offset=".54" stop-color="#6200c7"/>
+      <stop offset="1" stop-color="#00f"/>
+    </linearGradient>
+    <linearGradient id="sgL2" x1="7.34" y1="66.29" x2="35.65" y2="82.64" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#66f"/>
+      <stop offset="1" stop-color="#ff57ff"/>
+    </linearGradient>
+    <linearGradient id="sgL3" x1="115.26" y1="118.44" x2="115.26" y2="33.86" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f0f"/>
+      <stop offset=".54" stop-color="#6200c7"/>
+      <stop offset="1" stop-color="#00f"/>
+    </linearGradient>
+    <linearGradient id="sgL4" x1="53.1" y1="55.74" x2="109.72" y2="88.43" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#66f"/>
+      <stop offset="1" stop-color="#ff57ff"/>
+    </linearGradient>
+    <linearGradient id="sgL5" x1="217.72" y1="139.23" x2="217.72" y2="12.37" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f0f"/>
+      <stop offset="1" stop-color="#00f"/>
+    </linearGradient>
+    <linearGradient id="sgL6" x1="124.48" y1="45.19" x2="209.41" y2="94.23" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#66f"/>
+      <stop offset="1" stop-color="#ff57ff"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#sgL1)" d="M25.61,51.23s0,0,0,0v51.23h0c4.62-11.72,13.9-20.99,25.61-25.61-11.72-4.62-20.99-13.9-25.61-25.61"/>
+  <path fill="url(#sgL2)" d="M25.61,51.23c-4.62,11.72-13.9,20.99-25.61,25.61,11.72,4.62,20.99,13.9,25.61,25.61h0v-51.23s0,0,0,0"/>
+  <path fill="url(#sgL3)" d="M89.65,25.61s0,0,0,0v102.45h0c9.24-23.43,27.79-41.98,51.23-51.23-23.44-9.24-41.99-27.79-51.23-51.23"/>
+  <path fill="url(#sgL4)" d="M89.65,25.61c-9.24,23.44-27.79,41.99-51.23,51.23,23.44,9.24,41.99,27.79,51.23,51.23h0V25.62s0,0,0,0"/>
+  <path fill="url(#sgL5)" d="M179.3,0s0,0,0,0v153.68h0c13.86-35.15,41.69-62.98,76.84-76.84-35.15-13.86-62.98-41.69-76.84-76.84"/>
+  <path fill="url(#sgL6)" d="M179.3,0c-13.86,35.15-41.69,62.98-76.84,76.84,35.15,13.86,62.98,41.69,76.84,76.84h0s0-153.68,0-153.68c0,0,0,0,0,0"/>
+</svg>

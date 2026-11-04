@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#09090b" />
+  <title>Signal Genius — A clearer path to resolution</title>
+  <meta name="description" content="A new approach to AI-native enterprise service management is taking shape." />
+  <link rel="icon" href="assets/Favicon-16x16px.png" sizes="16x16" type="image/png" />
+  <link rel="icon" href="assets/Favicon---32-x-32-px.png" sizes="32x32" type="image/png" />
+  <link rel="icon" href="assets/Asset%2020.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="assets/Apple-home-screen---Safari--180-x-180-px.png" sizes="180x180" />
+  <link rel="manifest" href="site.webmanifest" />
+  <meta property="og:title" content="Signal Genius — A clearer path to resolution" />
+  <meta property="og:description" content="A new approach to AI-native enterprise service management is taking shape." />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Signal Genius" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:url" content="https://signalgenius.ai/" />
+  <meta property="og:image" content="https://signalgenius.ai/assets/Social-share-1200-%C3%97-630-px.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Signal Genius" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Signal Genius — A clearer path to resolution" />
+  <meta name="twitter:description" content="A new approach to AI-native enterprise service management is taking shape." />
+  <meta name="twitter:image" content="https://signalgenius.ai/assets/X-large-card---1200-x-1200-px.png" />
+  <meta name="twitter:image:alt" content="Signal Genius" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap"></noscript>
+  <style>
+    /* BRAND CUSTOMIZATION: --brand-font can be swapped for the approved brand face. */
+    @property --wash-1{syntax:"<color>";inherits:false;initial-value:rgba(139,108,246,.22)}
+    @property --wash-2{syntax:"<color>";inherits:false;initial-value:rgba(251,146,90,.10)}
+    @property --wash-3{syntax:"<color>";inherits:false;initial-value:rgba(168,84,223,.16)}
+    :root{--bg:#09090b;--wash-1:rgba(139,108,246,.22);--wash-2:rgba(251,146,90,.10);--wash-3:rgba(168,84,223,.16);--text:#f7f8fc;--muted:#a7b2c6;--accent:#8b9cff;--ice:#a854df;--brand-font:"Geist","Inter","Aptos","Segoe UI",sans-serif}
+    *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--text);font-family:var(--brand-font);min-height:100vh}
+    .page{min-height:100vh;display:flex;flex-direction:column;overflow-x:hidden;position:relative;background-color:var(--bg);background-image:radial-gradient(55% 45% at 30% 8%,var(--wash-1),transparent 70%),radial-gradient(45% 40% at 78% 20%,var(--wash-2),transparent 70%),radial-gradient(60% 50% at 50% 92%,var(--wash-3),transparent 72%);background-size:140% 140%,150% 150%,160% 140%;background-position:0% 0%,100% 10%,50% 100%;animation:bg-wash 5s ease-in-out infinite alternate}
+    header{position:relative;display:flex;justify-content:space-between;align-items:center;padding:30px clamp(22px,5vw,74px);z-index:2}
+    .brand{display:flex;align-items:center;gap:12px;color:inherit;text-decoration:none}
+    .logo{height:clamp(22px,2.4vw,28px);width:auto;display:block;flex:none}
+    main{position:relative;z-index:1;flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:2.5vh 24px 2vh;margin-top:-10vh}
+    .eyebrow{font-size:clamp(8.8px,0.72em,0.8vw);letter-spacing:.24em;text-transform:uppercase;color:#b2bcff;font-weight:500;margin:0 0 3vh}
+    h1{font-size:clamp(32px,3.75em,6vw);line-height:.99;font-weight:640;max-width:980px;margin:0}
+    h1 em{font-style:normal;color:var(--ice)}
+    .sub{font-size: clamp(16px, 1.2em, 1vw);line-height: 1.75;color: var(--muted);max-width: 900px;margin: 3vh auto 0;}
+    .signal{width:min(540px,92vw);height:auto;margin:4px 0 0;overflow:visible;transform:translateX(var(--signal-nudge,0))}
+    .shard{opacity:0;pointer-events:none;transform-box:view-box;transform-origin:0 0;will-change:transform,opacity}
+    .shard .ink,.shard .brand{will-change:opacity}
+    .shard .brand{opacity:0}
+    #lanes,#exit{will-change:opacity}
+    #meet{will-change:opacity}
+    .information{font-size:clamp(18px,1.25em,1vw);color:#8190b3;font-weight:700;margin-top:-4vh;opacity:0;animation:fadeIn 0.5s linear forwards;animation-delay:5.4s}
+    .caption{font-size:clamp(18px,1.25em,1vw);color:#8190b3;margin-top:4.5vh;max-width:800px;}
+    .caption em{font-style:normal;font-weight:700;color:var(--ice)}
+    .line-item{display:inline-block;opacity:0;transform:translateY(-12px);animation:line-item-in .4s ease-out forwards}
+    .line-item.line-1{animation-delay:.2s}
+    .line-item.line-2{animation-delay:.45s}
+    .sub.line-item{animation-delay:.7s}
+    .caption.line-item{animation-delay:.95s}
+    footer{position:relative;z-index:2;margin:auto clamp(22px,5vw,74px) 0;padding:22px 0 25px;border-top:1px solid rgba(167,178,198,.16);color:#8190b3;font-size:12px;font-weight:450;letter-spacing:.01em}
+    @media(max-width:600px){header{padding-top:22px}.logo{height:20px}main{padding-top:4vh}.signal{width:min(540px,100%);margin-top:16px}.caption{letter-spacing:.1em}footer{padding-top:18px;padding-bottom:20px}}
+    @media(max-height:820px) and (min-width:601px){header{padding-top:16px;padding-bottom:16px}main{padding-top:1vh;padding-bottom:1vh}.eyebrow{margin-bottom:22px}.sub{margin-top:22px}.signal{width:min(480px,86vw);margin-top:4px}.caption{margin-top:22px}}
+    @media(orientation:landscape) and (max-height:500px){header{padding:10px clamp(22px,5vw,74px)}.logo{height:18px}main{margin-top:0;padding:8px 24px 12px;justify-content:flex-start}.eyebrow{margin-bottom:8px}.sub{margin-top:8px;line-height:1.45}.caption{margin-top:8px}.information{margin-top:0}.signal{width:min(320px,42vw);margin-top:4px}}
+    @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}.page{animation:none}.shard{opacity:1}.shard .ink{opacity:0}.shard .brand{opacity:1}#meet{opacity:0}}
+    @keyframes line-item-in {
+      from { transform: translateY(-12px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    /* Interpolate colors via @property — never swap background-image (that snaps). */
+    @keyframes bg-wash {
+      0% {
+        --wash-1: rgba(139,108,246,.22);
+        --wash-2: rgba(251,146,90,.10);
+        --wash-3: rgba(168,84,223,.16);
+        background-position: 0% 0%, 100% 10%, 40% 100%;
+      }
+      50% {
+        --wash-1: rgba(186,110,220,.24);
+        --wash-2: rgba(232,130,180,.14);
+        --wash-3: rgba(232,130,180,.18);
+        background-position: 35% 20%, 65% 0%, 70% 90%;
+      }
+      100% {
+        --wash-1: rgba(168,84,223,.22);
+        --wash-2: rgba(245,138,120,.12);
+        --wash-3: rgba(139,108,246,.18);
+        background-position: 15% 35%, 85% 25%, 20% 95%;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <span class="brand">
+      <img class="logo" src="assets/Asset%2016.svg" alt="Signal Genius" width="210" height="28">
+    </span>
+  </header>
+  <main>
+    <p class="eyebrow">INTRODUCING AGENTIC SERVICE MANAGEMENT</p>
+    <!-- Option 1 - Before Review -->
+    <!-- <p class="eyebrow">AI-native enterprise service management</p> -->
+    <!-- <h1>
+      <span class="line-item line-1">From complexity</span><br>
+      <span class="line-item line-2">to <em>clarity.</em></span>
+    </h1> -->
+    <!-- <p class="sub">Enterprise service management is ready for a new direction. Signal Genius is building toward a world where employee work moves with greater intelligence, intent and control.</p> -->
+     <!-- <p class="sub">A new signal for enterprise work</p> -->
+
+
+    <!-- Option 2.1 - After Review -->
+    <h1>
+      <span class="line-item line-1">Keep Enterprise Work <em>Moving.</em></span><br>
+      <!-- <span class="line-item line-2"><em>Beyond Workflows.</em></span>-->
+    </h1>
+    <p class="sub line-item">Disconnected systems. &nbsp;Endless handoffs. &nbsp;Unnecessary friction.<br>We envision enterprise services that keep work moving and people focused on what matters.</p>
+    <p class="caption line-item">Not just answered. &nbsp;<em>Resolved.</em></p>
+
+
+    <!-- Option 2.2 - After Review -->
+    <!-- <h1>
+      <span class="line-item line-1">Intelligence That Moves </span><br>
+      <span class="line-item line-2">the Enterprise <em>Forward</em>.</span>
+    </h1>
+    <p class="sub line-item">Intelligence That Understands. Autonomy That Delivers.</p>
+    <p class="caption line-item">Today's enterprise runs on countless tools, processes and interactions, yet getting things done still takes too much coordination. We're building a new intelligence to change that.</p> -->
+
+
+    <svg class="signal" viewBox="0 60 640 380" role="img" aria-label="Three mark elements travel separate paths, meet on one thread, and form the Signal Genius logo" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="line" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4e5b9d" stop-opacity=".14"/><stop offset=".55" stop-color="#9ca9ff" stop-opacity=".8"/><stop offset="1" stop-color="#a8e5ff"/></linearGradient>
+        <linearGradient id="gemL" gradientUnits="userSpaceOnUse" x1="-12.8" y1="25.61" x2="-12.8" y2="-25.61"><stop offset="0" stop-color="#6a14c8"/><stop offset=".45" stop-color="#8b2be8"/><stop offset=".75" stop-color="#a95cff"/><stop offset="1" stop-color="#d9b3ff"/></linearGradient>
+        <linearGradient id="gemR" gradientUnits="userSpaceOnUse" x1="12.8" y1="25.61" x2="12.8" y2="-25.61"><stop offset="0" stop-color="#2a0a5e"/><stop offset=".5" stop-color="#6a1db8"/><stop offset="1" stop-color="#8a38e0"/></linearGradient>
+        <path id="lane-u0" data-band="up" d="M10 75 C115 75 135 175 250 190 S355 245 470 250"/>
+        <path id="lane-u1" data-band="up" d="M0 105 C105 110 145 205 250 215 S355 250 470 250"/>
+        <path id="lane-u2" data-band="up" d="M0 145 C100 145 155 225 250 235 S360 250 470 250"/>
+        <path id="lane-m0" data-band="mid" d="M0 185 C105 185 160 240 250 245 S360 250 470 250"/>
+        <path id="lane-mid" data-band="mid" d="M0 225 C110 225 160 250 250 250 S360 250 470 250"/>
+        <path id="lane-m2" data-band="mid" d="M0 275 C110 275 160 250 250 250 S360 250 470 250"/>
+        <path id="lane-l0" data-band="low" d="M0 315 C105 315 160 260 250 255 S360 250 470 250"/>
+        <path id="lane-l1" data-band="low" d="M0 355 C100 355 155 275 250 265 S360 250 470 250"/>
+        <path id="lane-l2" data-band="low" d="M0 395 C105 395 145 295 250 285 S355 255 470 250"/>
+        <path id="lane-l3" data-band="low" d="M10 425 C115 425 135 325 250 310 S355 260 470 250"/>
+      </defs>
+      <g id="lanes" fill="none" stroke="url(#line)" stroke-width="1.35">
+        <path d="M10 75 C115 75 135 175 250 190 S355 245 470 250 S560 250 625 250"/>
+        <path d="M0 105 C105 110 145 205 250 215 S355 250 470 250 S560 250 625 250" opacity=".8"/>
+        <path d="M0 145 C100 145 155 225 250 235 S360 250 470 250 S560 250 625 250" opacity=".8"/>
+        <path d="M0 185 C105 185 160 240 250 245 S360 250 470 250 S560 250 625 250" opacity=".9"/>
+        <path d="M0 225 C110 225 160 250 250 250 S360 250 470 250 S560 250 625 250"/>
+        <path d="M0 275 C110 275 160 250 250 250 S360 250 470 250 S560 250 625 250"/>
+        <path d="M0 315 C105 315 160 260 250 255 S360 250 470 250 S560 250 625 250" opacity=".9"/>
+        <path d="M0 355 C100 355 155 275 250 265 S360 250 470 250 S560 250 625 250" opacity=".8"/>
+        <path d="M0 395 C105 395 145 295 250 285 S355 255 470 250 S560 250 625 250" opacity=".8"/>
+        <path d="M10 425 C115 425 135 325 250 310 S355 260 470 250 S560 250 625 250" opacity=".65"/>
+      </g>
+      <g id="meet">
+        <circle cx="470" cy="250" r="25" fill="#a8e5ff" opacity=".08"/>
+        <circle cx="470" cy="250" r="8" fill="#a8e5ff" opacity=".16"/>
+        <circle cx="470" cy="250" r="3.5" fill="#d7f6ff"/>
+      </g>
+      <g id="exit">
+        <path d="M483 250 H615" stroke="#a8e5ff" stroke-width="1.5" stroke-linecap="round"/>
+        <circle cx="615" cy="250" r="3" fill="#a8e5ff"/>
+      </g>
+      <g class="shard" id="shard-s" aria-hidden="true">
+        <g class="ink"><path fill="#a8e5ff" d="M0 25.61c-4.62-11.72-13.89-20.99-25.61-25.61C-13.89-4.62-4.62-13.89 0-25.61v51.22Z"/><path fill="#a8e5ff" d="M0-25.61c4.62 11.72 13.89 20.99 25.61 25.61c-11.71 4.62-20.99 13.89-25.61 25.61V-25.61Z"/></g>
+        <g class="brand"><path fill="url(#gemL)" d="M0 25.61c-4.62-11.72-13.89-20.99-25.61-25.61C-13.89-4.62-4.62-13.89 0-25.61v51.22Z"/><path fill="url(#gemR)" d="M0-25.61c4.62 11.72 13.89 20.99 25.61 25.61c-11.71 4.62-20.99 13.89-25.61 25.61V-25.61Z"/></g>
+      </g>
+      <g class="shard" id="shard-m" aria-hidden="true">
+        <g class="ink"><path fill="#a8e5ff" d="M0 25.61c-4.62-11.72-13.89-20.99-25.61-25.61C-13.89-4.62-4.62-13.89 0-25.61v51.22Z"/><path fill="#a8e5ff" d="M0-25.61c4.62 11.72 13.89 20.99 25.61 25.61c-11.71 4.62-20.99 13.89-25.61 25.61V-25.61Z"/></g>
+        <g class="brand"><path fill="url(#gemL)" d="M0 25.61c-4.62-11.72-13.89-20.99-25.61-25.61C-13.89-4.62-4.62-13.89 0-25.61v51.22Z"/><path fill="url(#gemR)" d="M0-25.61c4.62 11.72 13.89 20.99 25.61 25.61c-11.71 4.62-20.99 13.89-25.61 25.61V-25.61Z"/></g>
+      </g>
+      <g class="shard" id="shard-l" aria-hidden="true">
+        <g class="ink"><path fill="#a8e5ff" d="M0 25.61c-4.62-11.72-13.89-20.99-25.61-25.61C-13.89-4.62-4.62-13.89 0-25.61v51.22Z"/><path fill="#a8e5ff" d="M0-25.61c4.62 11.72 13.89 20.99 25.61 25.61c-11.71 4.62-20.99 13.89-25.61 25.61V-25.61Z"/></g>
+        <g class="brand"><path fill="url(#gemL)" d="M0 25.61c-4.62-11.72-13.89-20.99-25.61-25.61C-13.89-4.62-4.62-13.89 0-25.61v51.22Z"/><path fill="url(#gemR)" d="M0-25.61c4.62 11.72 13.89 20.99 25.61 25.61c-11.71 4.62-20.99 13.89-25.61 25.61V-25.61Z"/></g>
+      </g>
+    </svg>
+     <div class="information">A new era of enterprise intelligence is taking shape.</div>
+  </main>
+  <footer>© <span id="year">2026</span> SignalGenius</footer>
+</div>
+<script>
+(function () {
+  var SWEEP = 8000;
+  var PATH_FROM = 0.04, HANDOFF_P = 0.7;
+  var MERGE_AT = 0.4, MERGE_SPAN = 0.16, COLOR_AT = 0.54, COLOR_SPAN = 0.12;
+  var HOLD_AT = COLOR_AT + COLOR_SPAN;
+  var TRAVEL_SCALE = 0.4, MARK = 0.32, AY = 250, ORIGIN = 25.61, AX = 470;
+  var LINE_DIM = 0.15;
+  var PULSE_MS = 2400, PULSE_AMP = 0.23, PULSE_GLOW = 0.35;
+  var MERGE_END_MS = (MERGE_AT + MERGE_SPAN) * SWEEP;
+  var PULSE_AT_MS = HOLD_AT * SWEEP;
+  var SAMPLE_N = 96;
+  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var meet = document.getElementById("meet");
+  var lanes = document.getElementById("lanes");
+  var exit = document.getElementById("exit");
+  var signal = document.querySelector(".signal");
+  var travelEndMs = SWEEP * HOLD_AT;
+  var shards = [
+    { el: document.getElementById("shard-s"), mult: 1, center: 25.61 },
+    { el: document.getElementById("shard-m"), mult: 2, center: 89.65 },
+    { el: document.getElementById("shard-l"), mult: 3, center: 179.3 }
+  ];
+  var bands = ["up", "mid", "low"].map(function (band) {
+    return Array.prototype.slice.call(document.querySelectorAll('[data-band="' + band + '"]'));
+  });
+  var pathCache = new Map();
+  var alongPoint = { x: 0, y: 0 };
+
+  shards.forEach(function (shard) {
+    shard.ink = shard.el.querySelector(".ink");
+    shard.brand = shard.el.querySelector(".brand");
+  });
+
+  function clamp01(t) { return t < 0 ? 0 : t > 1 ? 1 : t; }
+  function smooth(t) { t = clamp01(t); return t * t * (3 - 2 * t); }
+
+  function samplePath(pathEl) {
+    var cached = pathCache.get(pathEl);
+    if (cached) return cached;
+    var len = pathEl.getTotalLength();
+    var xs = new Float32Array(SAMPLE_N + 1);
+    var ys = new Float32Array(SAMPLE_N + 1);
+    for (var i = 0; i <= SAMPLE_N; i++) {
+      var p = pathEl.getPointAtLength(len * (i / SAMPLE_N));
+      xs[i] = p.x;
+      ys[i] = p.y;
+    }
+    cached = { xs: xs, ys: ys, n: SAMPLE_N, band: pathEl.getAttribute("data-band") };
+    pathCache.set(pathEl, cached);
+    return cached;
+  }
+
+  function pointAt(samples, t, out) {
+    var u = clamp01(t) * samples.n;
+    var i = u | 0;
+    if (i >= samples.n) {
+      out.x = samples.xs[samples.n];
+      out.y = samples.ys[samples.n];
+      return out;
+    }
+    var f = u - i;
+    out.x = samples.xs[i] + (samples.xs[i + 1] - samples.xs[i]) * f;
+    out.y = samples.ys[i] + (samples.ys[i + 1] - samples.ys[i]) * f;
+    return out;
+  }
+
+  bands.forEach(function (band) {
+    band.forEach(samplePath);
+  });
+
+  var dtdu = (HANDOFF_P - PATH_FROM) / MERGE_AT;
+  var midSamples = samplePath(document.getElementById("lane-mid"));
+  var ahead = pointAt(midSamples, HANDOFF_P, { x: 0, y: 0 });
+  var back = pointAt(midSamples, HANDOFF_P - 0.025, { x: 0, y: 0 });
+  var vx = (ahead.x - back.x) / 0.025 * dtdu;
+  var convoy0 = ahead.x;
+  // Final convoy x = handoff point + continued run through hold.
+  var restOrigin = convoy0 + vx * (HOLD_AT - MERGE_AT);
+  // Brand mark viewBox center (256.14 / 2). Pin that to page center.
+  var restLogoMid = restOrigin + (128.07 - ORIGIN) * MARK;
+  if (signal) {
+    signal.style.setProperty("--signal-nudge", ((320 - restLogoMid) / 640 * 100).toFixed(4) + "%");
+  }
+
+  function shuffle(list) {
+    for (var i = list.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var swap = list[i];
+      list[i] = list[j];
+      list[j] = swap;
+    }
+    return list;
+  }
+
+  function roll() {
+    var times = shuffle([0, 0.035 + Math.random() * 0.02, 0.07 + Math.random() * 0.025]);
+    var lanesPick = shuffle(bands.map(function (band) {
+      return band[Math.floor(Math.random() * band.length)];
+    }));
+    shards.forEach(function (shard, i) {
+      shard.depart = times[i];
+      shard.samples = samplePath(lanesPick[i]);
+      shard.fallAt = null;
+      if (shard.samples.band !== "up") return;
+      var y0 = pointAt(shard.samples, PATH_FROM, alongPoint).y;
+      var y1 = pointAt(shard.samples, HANDOFF_P, alongPoint).y;
+      var mark = y0 + (y1 - y0) * 0.75;
+      var at = 0.45;
+      for (var step = 1; step <= 24; step++) {
+        var mix = step / 24;
+        var t = PATH_FROM + (HANDOFF_P - PATH_FROM) * mix;
+        if (pointAt(shard.samples, t, alongPoint).y >= mark) {
+          at = mix;
+          break;
+        }
+      }
+      shard.fallAt = Math.min(Math.max(at, 0.55), 0.62);
+    });
+  }
+
+  roll();
+
+  function place(shard, x, y, scale, opacity, colorT, angle) {
+    var spin = angle ? " rotate(" + angle.toFixed(2) + "deg)" : "";
+    shard.el.style.transform =
+      "translate(" + x.toFixed(2) + "px," + y.toFixed(2) + "px)" + spin + " scale(" + scale.toFixed(3) + ")";
+    shard.el.style.opacity = String(opacity);
+    shard.ink.style.opacity = String(1 - colorT);
+    shard.brand.style.opacity = String(colorT);
+  }
+
+  function setLines(opacity) {
+    var value = String(opacity);
+    if (lanes) lanes.style.opacity = value;
+    if (exit) exit.style.opacity = value;
+  }
+
+  function renderTravel(elapsed) {
+    var u = clamp01(elapsed / SWEEP);
+    var moveU = Math.min(u, HOLD_AT);
+    var mergeT = smooth((moveU - MERGE_AT) / MERGE_SPAN);
+    var colorT = smooth((u - COLOR_AT) / COLOR_SPAN);
+    shards.forEach(function (shard) {
+      var laneMix = clamp01((moveU - shard.depart) / (MERGE_AT - shard.depart));
+      var pathT = PATH_FROM + (HANDOFF_P - PATH_FROM) * laneMix;
+      pointAt(shard.samples, pathT, alongPoint);
+      var run = vx * Math.max(0, moveU - MERGE_AT);
+      var slotX = convoy0 + (shard.center - ORIGIN) * MARK;
+      var scaleT = clamp01((laneMix - 0.5) / 0.5);
+      var scale = TRAVEL_SCALE + (MARK * shard.mult - TRAVEL_SCALE) * scaleT;
+      var opacity = smooth((u - shard.depart) / 0.045);
+      var angle = 0;
+      if (shard.fallAt != null) {
+        var raw1 = clamp01((laneMix - shard.fallAt) / 0.32);
+        angle = smooth(raw1) * 90 + mergeT * 90;
+      }
+      var x = alongPoint.x + run + (slotX - alongPoint.x) * mergeT;
+      var y = alongPoint.y + (AY - alongPoint.y) * mergeT;
+      shard.restX = x;
+      shard.restY = y;
+      shard.restScale = scale;
+      shard.restAngle = angle;
+      place(shard, x, y, scale, opacity, colorT, angle);
+    });
+    if (meet) meet.style.opacity = String(1 - mergeT);
+  }
+
+  function renderLines(elapsed) {
+    var lineT = smooth((elapsed - MERGE_END_MS) / (PULSE_AT_MS - MERGE_END_MS));
+    setLines(1 - (1 - LINE_DIM) * lineT);
+  }
+
+
+  function renderRest(since) {
+    var ping = 0.5 + 0.5 * Math.sin((since / PULSE_MS) * Math.PI * 2);
+    var glow = (ping * PULSE_GLOW).toFixed(2);
+    shards.forEach(function (shard) {
+      place(
+        shard,
+        shard.restX,
+        shard.restY,
+        shard.restScale * (1 + PULSE_AMP * ping),
+        0.85 + 0.15 * ping,
+        1,
+        shard.restAngle
+      );
+      shard.el.style.filter =
+        "drop-shadow(0 0 " + (6 + ping * 18).toFixed(1) + "px rgba(168,229,255," + glow + "))";
+    });
+  }
+
+  if (reduce) {
+    shards.forEach(function (shard) {
+      place(shard, AX + (shard.center - ORIGIN) * MARK, AY, MARK * shard.mult, 1, 1);
+    });
+    if (meet) meet.style.opacity = "0";
+    setLines(LINE_DIM);
+    return;
+  }
+
+  var clock = 0;
+  var lastNow = 0;
+  var raf = 0;
+  var phase = "travel";
+  var restAt = 0;
+  var pageVisible = document.visibilityState !== "hidden";
+  var onscreen = true;
+
+  function shouldRun() { return pageVisible && onscreen; }
+
+  function loop(now) {
+    raf = 0;
+    if (!shouldRun()) {
+      lastNow = 0;
+      return;
+    }
+    if (!lastNow) lastNow = now;
+    clock += now - lastNow;
+    lastNow = now;
+    if (phase === "travel") {
+      renderTravel(Math.min(clock, travelEndMs));
+      if (clock >= travelEndMs) {
+        phase = "rest";
+        restAt = clock;
+      }
+    }
+    if (phase === "rest") renderRest(clock - restAt);
+    renderLines(clock);
+    raf = requestAnimationFrame(loop);
+  }
+
+  function play() {
+    if (raf || !shouldRun()) return;
+    lastNow = 0;
+    raf = requestAnimationFrame(loop);
+  }
+
+  function pause() {
+    if (!raf) return;
+    cancelAnimationFrame(raf);
+    raf = 0;
+    lastNow = 0;
+  }
+
+  document.addEventListener("visibilitychange", function () {
+    pageVisible = document.visibilityState !== "hidden";
+    if (pageVisible) play();
+    else pause();
+  });
+
+  if (signal && "IntersectionObserver" in window) {
+    new IntersectionObserver(function (entries) {
+      onscreen = entries[0].isIntersecting;
+      if (onscreen) play();
+      else pause();
+    }, { threshold: 0 }).observe(signal);
+  }
+
+  play();
+})();
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
