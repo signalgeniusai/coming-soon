@@ -3,11 +3,33 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>SignalGenius Coming Soon</title>
+<title>SignalGenius - A new era of enterprise intelligence</title>
+<meta name="description" content="SignalGenius is building agentic service management that moves enterprise work forward, so your people can focus on what matters.">
+<link rel="canonical" href="https://signalgenius.ai/">
+<meta name="theme-color" content="#000000">
+<link rel="manifest" href="site.webmanifest">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SignalGenius">
+<meta property="og:title" content="SignalGenius - A new era of enterprise intelligence">
+<meta property="og:description" content="SignalGenius is building agentic service management that moves enterprise work forward, so your people can focus on what matters.">
+<meta property="og:url" content="https://signalgenius.ai/">
+<meta property="og:image" content="https://signalgenius.ai/assets/Social-share-1200-%C3%97-630-px.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="2400">
+<meta property="og:image:height" content="1260">
+<meta property="og:image:alt" content="SignalGenius: keep enterprise work moving">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="SignalGenius - A new era of enterprise intelligence">
+<meta name="twitter:description" content="SignalGenius is building agentic service management that moves enterprise work forward, so your people can focus on what matters.">
+<meta name="twitter:image" content="https://signalgenius.ai/assets/Social-share-1200-%C3%97-630-px.png">
+<meta name="twitter:image:alt" content="SignalGenius: keep enterprise work moving">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="icon" href="assets/Favicon-16x16px.png" sizes="16x16" type="image/png" />
 <link rel="icon" href="assets/Favicon---32-x-32-px.png" sizes="32x32" type="image/png" />
+<link rel="icon" href="assets/PWA---Android-install-192x192-px.png" sizes="192x192" type="image/png" />
 <link rel="icon" href="assets/Asset%2020.svg" type="image/svg+xml" />
 <link rel="apple-touch-icon" href="assets/Apple-home-screen---Safari--180-x-180-px.png" sizes="180x180" />
 <style>
@@ -23,7 +45,7 @@
 html,body{background:var(--bg);height:100%;overflow:hidden}
 body{margin:0;color:var(--fg);font-family:var(--sans);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility}
 *{box-sizing:border-box}
-.page{position:relative;overflow:hidden;height:100vh;height:100dvh;display:flex;flex-direction:column}
+.page{position:relative;overflow:hidden;height:100vh;height:100dvh;display:flex;flex-direction:column;padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left)}
 .sky{position:absolute;inset:0;pointer-events:none;
   background:radial-gradient(ellipse 60% 38% at 50% -6%, rgba(200,180,255,.07), rgba(200,180,255,0) 70%)}
 .horizon{position:absolute;left:0;right:0;bottom:0;height:62vh;pointer-events:none;overflow:hidden;-webkit-mask-image:linear-gradient(0deg,#000 0%,#000 28%,rgba(0,0,0,.55) 55%,rgba(0,0,0,0) 100%);mask-image:linear-gradient(0deg,#000 0%,#000 28%,rgba(0,0,0,.55) 55%,rgba(0,0,0,0) 100%)}
@@ -142,7 +164,8 @@ footer{position:relative;flex:none;width:100%;max-width:1320px;margin:0 auto;pad
 @media (max-width:760px){ h1{font-size:40px} .lede,.kicker{font-size:16px} .tag{font-size:14px} }
 @media (max-width:480px){ h1{font-size:32px} }
 @media (max-width:640px){ .ln,.amb,.base,.trail,.tr{vector-effect:non-scaling-stroke} .ln{stroke-width:1.1} header{padding-inline:20px} footer{padding-inline:20px;padding-bottom:26px} .stage svg{width:150vw;height:auto;min-width:0;top:50%;transform:translate(-50%,-50%)} }
-@media (max-height:560px){ .lede{display:none} }
+/* Short viewports (e.g. phones in landscape): keep all content and let the page scroll instead of hiding text. */
+@media (max-height:560px){ html,body{height:auto;min-height:100%;overflow-y:auto} .page{height:auto;min-height:100vh;min-height:100dvh} }
 @media (prefers-reduced-motion: reduce){
   .horizon *{animation:none}
   .glowwrap,.official,.pre,.base,.pulse,.hole{animation:none;opacity:1;stroke-dashoffset:0}

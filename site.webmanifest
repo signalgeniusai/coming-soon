@@ -1,6 +1,6 @@
 {
-  "name": "Signal Genius",
-  "short_name": "Signal Genius",
+  "name": "SignalGenius",
+  "short_name": "SignalGenius",
   "description": "A new approach to AI-native enterprise service management is taking shape.",
   "start_url": "/",
   "display": "standalone",
